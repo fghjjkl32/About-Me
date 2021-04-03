@@ -27,6 +27,7 @@ html {
   line-height: 1.5; /* 단위 쓰지 말것 */
     background-color: #fff;
     color: #4d5058;
+    
   /* 글꼴 크기 조정을 방지 */
     -webkit-text-size-adjust: 100%; 
   /* 폰트를 부드럽게 */
