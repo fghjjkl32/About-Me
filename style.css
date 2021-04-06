@@ -20,7 +20,7 @@ html {
 
 section {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,31 +167,33 @@ section {
     position: absolute;
     top: 280px;
     left: 224px;
-    font-size: 40px;
+    font-size: 38px;
+    max-width: 500px;
     font-weight: var(--bold-size);
 }
 
 .second h3 {
     position: absolute;
-    top: 446px;
+    top: 456px;
     left: 224px;
     font-size: 22px;
+    max-width: 500px;
     font-weight: var(--regular-size);
     color: var(--grey-color);
     margin-top: 0;
 }
 
-.second .more {
+/* .second .more {
     position: absolute;
     top: 564px;
     font-size: 22px;
     font-weight: var(--regular-size);
     color: var(--black-color);
-}
+} */
 
 .second .boxes {
     position: absolute;
-    top: 673px;
+    top: 693px;
     left: 224px;
     display: flex;
     flex-direction: row;
@@ -444,3 +446,66 @@ top: 200px;
     transition: 0.5s;
     color: #4284f4;
 }
+/* 
+@media (max-width:1820px) { 
+    .second .big-box {
+        width: 40%;
+    }
+}
+
+@media (max-width:1510px) {
+    .second h2 {
+        min-width: 500px;
+        left: 40%;
+        top: 5%;
+        transform: translate(-50%);
+    }
+
+    .second h3 {
+        min-width: 700px;
+        left: 48%;
+        top: 20%;
+        transform: translate(-50%);
+    }
+
+    .second .boxes {
+        top: 35%;
+        left: 52%;
+        transform: translate(-50%);
+    }
+
+    .second .boxes .box {
+        width: 250px;
+        height: 200px;
+    }
+
+    .second .big-box {
+        height: 40%;
+        width: 60%;
+        left: 52%;
+        top: 60%;
+        transform: translate(-50%);
+    }
+
+    .third {
+        margin: 244px
+    }
+}
+
+@media (max-width:865px) {
+    .second h3 {
+        min-width: 650px;
+        left: 50%;
+    }
+
+    .second .boxes .box {
+        width: 200px;
+        height: 100px;
+    }
+
+    .second .big-box {
+        top: 50%;
+    }
+}
+
+@media (max-width:480px) {} */
