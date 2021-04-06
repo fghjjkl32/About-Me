@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+:root{
+    --black-color:#191919;
+    --white-color:#fff;
+    --grey-color:#767676;
+    --regular-size:400;
+    --bold-size:700;
+}
+
+h1,h2,h3,h4,strong {
+    font-family: 'Noto Sans KR';
+    color: var(--black-color);
+}
+
+html {
+    transition: all 0.5s ease-in;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glass {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    z-index: 0;
+    backdrop-filter: blur(5px);
+    box-shadow: 10px 0 15px rgba(0,0,0,0.3);
+    transition: 0.5s;
+    transition-delay: 1s;
+    border-radius: 10px;
+}
+
+.first video {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.first h1 {
+    padding-bottom: 500px;
+    transform: translateX(50%);
+    position: relative;
+    color: var(--white-color);
+    font-size: 10vh;
+    line-height: 0.55em;
+    text-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    font-family: 'Dancing Script', cursive;
+}
+
+.clock-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clock {
+    margin: 200px;
+}
+
+.needle {
+    background-color: var(--black-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 65px;
+    width: 3px;
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in;
+}
+
+.needle.hour {
+    transform: translate(-50%,-100%) rotate(0deg);
+}
+
+.needle.minute {
+    transform: translate(-50%,-100%) rotate(0deg);
+    height: 100px;
+}
+
+.needle.second {
+    transform: translate(-50%,-100%) rotate(30deg);
+    height: 100px;
+    background-color: #e74c3c;
+}
+
+.center-point {
+    background-color: #e74c3c;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.center-point::after {
+    content: '';
+    background-color: var(--black-color);
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+
+.time {
+    font-size: 60px;
+    color: var(--white-color);
+    text-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+.date {
+    color: var(--white-color);
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    text-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+.date .circle {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 18px;
+    transition: all 0.5s ease-in;
+    font-size: 12px;
+}
+
+.first h2 {
+    position: relative;
+    transform: translateX(-50%);
+    top: 300px;
+    color: var(--white-color);
+    text-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+/* second */
+
+/* #second {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-left: 15%;
+    margin-top: 10%;
+    flex-direction: column;
+} */
+
+#second {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    margin: 10% 15% 0% 15%;
+    width: 70%;
+    grid-template-rows: minmax(200px,450px) minmax(200px, 500px);
+    /* 그리드 행 생성 - 최소200px ~ 최대450px , 최소px200~500px 총2개 생성  */
+    grid-template-columns: repeat(2, 1fr);
+    /* 그리드 열 생성 1배율로 2개 생성 */
+    gap: 0 100px;
+    /* 그리드 틈 사이 조정 */
+    grid-template-areas: 
+    /* 그리드 템플릿 */
+    "titles big-box"
+    "boxes .";
+}
+
+
+#second .titles {
+    grid-area: titles;
+    /* 그리드 템플릿 */
+}
+
+#second h2 {
+    font-size: 38px;
+    font-weight: var(--bold-size);
+}
+
+#second h3 {
+    font-size: 22px;
+    font-weight: var(--regular-size);
+    color: var(--grey-color);
+    max-width: 500px;
+}
+
+#second .boxes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    grid-area: boxes;
+    /* 그리드 템플릿 */
+    align-self: start;
+}
+
+#second .boxes .box {
+    margin: 0 11px 0 11px;
+    width: 145px;
+    height: 98px;
+    cursor: pointer;
+    position: relative;
+}
+
+#second .boxes .box:first-child {
+    margin-left: 0;
+}
+
+#second .boxes .box:last-child {
+    margin-right: 0;
+}
+
+#second .big-box {
+    width: 948px;
+    height: 593px;
+    grid-area: big-box;
+    /* 그리드 템플릿 */
+}
+
+#second img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+button:focus {
+    outline: none;
+}
+
+#second .boxes .chevron {
+    padding: 11px 8px 11px 8px;
+    background-color: rgba(0,0,0,0.5);
+    color: var(--white-color);
+    border: none;
+    top: 50%;
+}
+
+.fa-arrow-right {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.box .chevron-left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.box .chevron-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
