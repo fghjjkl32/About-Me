@@ -87,7 +87,7 @@ section {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 65px;
+    height: 65px;
     width: 3px;
     transform-origin: bottom center;
     transition: all 0.5s ease-in;
@@ -159,11 +159,13 @@ section {
     font-size: 12px;
 }
 
-.first h2 {
+.first .time_ment {
     position: relative;
-    top: 200px;
+    top: 240px;
     color: var(--white-color);
     text-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    font-family: 'Noto Sans KR';
+    font-size: 28px;
 }
 
 
@@ -176,7 +178,7 @@ section {
     grid-template-rows: minmax(200px,450px) minmax(200px, 50px);
     /* 그리드 행 생성 - 최소200px ~ 최대450px , 최소px200~50px 총2개 생성  */
     grid-template-columns: minmax(500px,600px) minmax(200px,800px);
-    /* 그리드 행 생성 - 생성 */
+    /* 그리드 열 생성 - 생성 */
     gap: 0 50px;
     /* 그리드 틈 사이 조정 */
     grid-template-areas: 
@@ -215,8 +217,8 @@ section {
 
 #second .boxes .box {
     margin: 0 11px 0 11px;
-    width: 145px;
-    height: 98px;
+    width: 170px;
+    height: 120px;
     cursor: pointer;
     position: relative;
 }
@@ -236,6 +238,10 @@ section {
     height: 130%;
     grid-area: big-box;
     /* 그리드 템플릿 */
+}
+
+#second .big-box img {
+    text-align: center;
 }
 
 #second img {
