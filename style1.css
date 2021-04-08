@@ -44,13 +44,13 @@ section {
     width: 80%;
     height: 80%;
     z-index: 0;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(7px);
     box-shadow: 10px 0 15px rgba(0,0,0,0.3);
     transition: 0.5s;
     border-radius: 10px;
 }
 
-.first video {
+.first .video {
     z-index: -1;
     position: absolute;
     width: 100%;
@@ -83,7 +83,7 @@ section {
 }
 
 .needle {
-    background-color: var(--black-color);
+    background-color: var(--white-color);
     position: absolute;
     top: 50%;
     left: 50%;
