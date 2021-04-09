@@ -19,16 +19,24 @@ html {
 }
 
 body {
-    width: 100%;
-    height: 100vh;
     overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--grey-color);
+}
+
+
 section {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .first {
@@ -50,12 +58,17 @@ section {
     border-radius: 10px;
 }
 
-.first .video {
+.first .video{
     z-index: -1;
     position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.first .video video{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .first h1 {
@@ -172,12 +185,16 @@ section {
 /* second */
 
 #second {
+    margin: auto;
+}
+
+#second .grid{
+    padding: 12%;
     display: grid;
-    margin: 10% 0% 0% 12%;
-    width: 70%;
+    width: 100%;
     grid-template-rows: minmax(200px,450px) minmax(200px, 50px);
     /* 그리드 행 생성 - 최소200px ~ 최대450px , 최소px200~50px 총2개 생성  */
-    grid-template-columns: minmax(500px,600px) minmax(200px,800px);
+    grid-template-columns: minmax(500px,600px) minmax(500px,800px);
     /* 그리드 열 생성 - 생성 */
     gap: 0 50px;
     /* 그리드 틈 사이 조정 */
@@ -234,7 +251,7 @@ section {
 #second .big-box {
     /* width: 948px;
     height: 593px; */
-    width: 120%;
+    width: 100%;
     height: 130%;
     grid-area: big-box;
     /* 그리드 템플릿 */
@@ -393,6 +410,7 @@ input[type='range']:focus {
 /* last */
 
 #last {
+    margin-top: 10%;
     margin-left: 12%;
     display: flex;
     flex-direction: column;
