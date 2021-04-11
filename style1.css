@@ -9,7 +9,7 @@
     --bold-size:700;
 }
 
-h1,h2,h3,h4,strong {
+h1,h2,h3,h4,p,strong {
     font-family: 'Noto Sans KR';
     color: var(--black-color);
 }
@@ -215,7 +215,7 @@ section {
     font-weight: var(--bold-size);
 }
 
-#second h3 {
+#second .introduce_ment {
     font-size: 22px;
     font-weight: var(--regular-size);
     color: var(--grey-color);
@@ -423,7 +423,7 @@ input[type='range']:focus {
     font-size: 120px;
 }
 
-#last h3 {
+#last .last_ment {
     font-size: 40px;
 }
 
@@ -510,7 +510,7 @@ input[type='range']:focus {
         font-size: 80px;
     }
 
-    #last h3 {
+    #last .last_ment {
         font-size: 30px;
     }
 }
@@ -547,7 +547,7 @@ input[type='range']:focus {
         font-size: 60px;
     }
 
-    #last h3 {
+    #last .last_ment {
         font-size: 25px;
     }
 
@@ -567,7 +567,7 @@ input[type='range']:focus {
         font-size: 28px;
     }
 
-    #second h3 {
+    #second .introduce_ment {
         font-size: 18px;
         max-width: 400px;
         margin: 0;
@@ -609,7 +609,7 @@ input[type='range']:focus {
         font-size: 40px;
     }
 
-    #last h3 {
+    #last .last_ment {
         font-size: 16px;
         margin-top: 10px;
     }
@@ -626,7 +626,7 @@ input[type='range']:focus {
         font-size: 24px;
     }
 
-    #second h3 {
+    #second .introduce_ment {
         font-size: 16px;
         max-width: 400px;
         margin: 0;
@@ -642,7 +642,7 @@ input[type='range']:focus {
         font-size: 36px;
     }
 
-    #last h3 {
+    #last .last_ment {
         font-size: 14px;
         margin-top: 10px;
     }
@@ -662,7 +662,7 @@ input[type='range']:focus {
         font-size: 20px;
     }
 
-    #second h3 {
+    #second .introduce_ment {
         font-size: 14px;
     }
 
@@ -718,7 +718,7 @@ input[type='range']:focus {
         font-size: 30px;
     }
 
-    #last h3 {
+    #last .last_ment {
         font-size: 10px;
         margin-top: 10px;
     }
