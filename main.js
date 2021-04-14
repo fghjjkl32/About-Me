@@ -45,7 +45,7 @@ function setTimeMent() {
     const time = new Date();
     const hours = time.getHours();
 
-    if ("1" <= hours && hours <= "5") {
+    if ("0" <= hours && hours <= "5") {
         console.log("새벽");
         timeMent.innerHTML = '새벽';
         videoEl.innerHTML = `<video src="videos/${videos[0]}.mp4" autoplay muted loop></video>`;
@@ -65,7 +65,7 @@ function setTimeMent() {
         console.log("저녁");
         timeMent.innerHTML = '저녁';
         videoEl.innerHTML = `<video src="videos/${videos[4]}.mp4" autoplay muted loop></video>`;
-    } else if ("20" <= hours && hours <= "24") {
+    } else if ("21" <= hours && hours <= "24") {
         console.log("밤");
         timeMent.innerHTML = '밤';
         videoEl.innerHTML = `<video src="videos/${videos[5]}.mp4" autoplay muted loop></video>`;
