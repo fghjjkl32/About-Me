@@ -281,7 +281,7 @@ section {
 #second .big-box-image {
     width: 100%;
     height: 100%;
-    background:url(imgs/그림2.jpeg);
+    background:url(image/프로필1.jpeg);
     background-size: cover;
 
 }
