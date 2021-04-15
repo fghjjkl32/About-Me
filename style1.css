@@ -434,9 +434,21 @@ input[type='range']:focus {
     justify-content: center;
 }
 
+
 #last h1 {
     font-family: 'Roboto';
     font-size: 120px;
+    margin: 0;
+}
+
+#last .typing {  
+    animation: cursor 0.3s infinite;
+    display: inline-block;
+} 
+@keyframes cursor{ 
+    0%{border-right: 15px solid #fff} 
+    50%{border-right: 15px solid #000} 
+    100%{border-right: 15px solid #fff} 
 }
 
 #last .last_ment {
@@ -524,6 +536,7 @@ input[type='range']:focus {
 
     #last h1 {
         font-size: 80px;
+        
     }
 
     #last .last_ment {
