@@ -5,7 +5,6 @@ let arrIndex = 0;
 let del = -1;
 let tyInt = null;
 
-console.log(blinkText);
 // 타이핑될 텍스트를 가져온다 
 const textEl = ["Communication", "Focused", "Enthusiasm"];
 let typingTxt = textEl[arrIndex];

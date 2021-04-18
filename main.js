@@ -46,27 +46,21 @@ function setTimeMent() {
     const hours = time.getHours();
 
     if ("0" <= hours && hours <= "5") {
-        console.log("새벽");
         timeMent.innerHTML = '새벽';
         videoEl.innerHTML = `<video src="videos/${videos[0]}.mp4" autoplay muted loop></video>`;
     } else if ("6" <= hours && hours <= "10") {
-        console.log("아침");
         timeMent.innerHTML = '아침';
         videoEl.innerHTML = `<video src="videos/${videos[1]}.mp4" autoplay muted loop></video>`;
     } else if ("11" <= hours && hours <= "13") {
-        console.log("점심");
         timeMent.innerHTML = '점심';
         videoEl.innerHTML = `<video src="videos/${videos[2]}.mp4" autoplay muted loop></video>`;
     } else if ("14" <= hours && hours <= "16") {
-        console.log("오후");
         timeMent.innerHTML = '오후';
         videoEl.innerHTML = `<video src="videos/${videos[3]}.mp4" autoplay muted loop></video>`;
     } else if ("17" <= hours && hours <= "20") {
-        console.log("저녁");
         timeMent.innerHTML = '저녁';
         videoEl.innerHTML = `<video src="videos/${videos[4]}.mp4" autoplay muted loop></video>`;
     } else if ("21" <= hours && hours <= "24") {
-        console.log("밤");
         timeMent.innerHTML = '밤';
         videoEl.innerHTML = `<video src="videos/${videos[5]}.mp4" autoplay muted loop></video>`;
     }
