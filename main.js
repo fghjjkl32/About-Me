@@ -44,24 +44,25 @@ function setTime() {
 function setTimeMent() {
     const time = new Date();
     const hours = time.getHours();
+    const hoursForClock = hours % 12;
 
     if ("0" <= hours && hours <= "5") {
-        timeMent.innerHTML = '새벽';
+        timeMent.innerHTML = `벌써 ${hoursForClock}시네요🤭 잠은 주무셨나요? `;
         videoEl.innerHTML = `<video src="videos/${videos[0]}.mp4" autoplay muted loop></video>`;
     } else if ("6" <= hours && hours <= "10") {
-        timeMent.innerHTML = '아침';
+        timeMent.innerHTML = `좋은 아침입니다 오늘도 즐거운 하루😄`;
         videoEl.innerHTML = `<video src="videos/${videos[1]}.mp4" autoplay muted loop></video>`;
     } else if ("11" <= hours && hours <= "13") {
-        timeMent.innerHTML = '점심';
+        timeMent.innerHTML = `매일 기다리는 즐거운 점심시간 입니다! 점심은 드셨나요?`;
         videoEl.innerHTML = `<video src="videos/${videos[2]}.mp4" autoplay muted loop></video>`;
     } else if ("14" <= hours && hours <= "16") {
-        timeMent.innerHTML = '오후';
+        timeMent.innerHTML = `가장 날이 좋은 시간 ${hoursForClock}시네요! `;
         videoEl.innerHTML = `<video src="videos/${videos[3]}.mp4" autoplay muted loop></video>`;
     } else if ("17" <= hours && hours <= "20") {
-        timeMent.innerHTML = '저녁';
+        timeMent.innerHTML = `벌써 ${hoursForClock}시네요😊 혹시 저녁 식사는 드셨나요?`;
         videoEl.innerHTML = `<video src="videos/${videos[4]}.mp4" autoplay muted loop></video>`;
     } else if ("21" <= hours && hours <= "24") {
-        timeMent.innerHTML = '밤';
+        timeMent.innerHTML = `벌써 하루가 다 끝나가네요😢 오늘 하루는 어땠나요?`;
         videoEl.innerHTML = `<video src="videos/${videos[5]}.mp4" autoplay muted loop></video>`;
     }
 }

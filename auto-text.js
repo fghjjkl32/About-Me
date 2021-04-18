@@ -12,7 +12,7 @@ let typingTxt = textEl[arrIndex];
 if (typingBool == false) {
     // 타이핑이 진행되지 않았다면 
     typingBool = true;
-    tyInt = setInterval(typing, 200); // 첫번재 반복동작 
+    tyInt = setInterval(typing, 150); // 첫번재 반복동작 
 }
 
 function typing() {
@@ -26,7 +26,7 @@ function typing() {
             //첫번째 단어가 써지면 1초쉰다.
             clearInterval(tyInt);
             setTimeout(function () {
-                tyInt = setInterval(typing, 200);
+                tyInt = setInterval(typing, 150);
             }, 1000);
         }
     } else {
@@ -48,7 +48,7 @@ function typing() {
             //1초후 다음분장 타이핑 
             clearInterval(tyInt);
             setTimeout(function () {
-                tyInt = setInterval(typing, 200);
+                tyInt = setInterval(typing, 150);
             }, 1000);
         }
     }
