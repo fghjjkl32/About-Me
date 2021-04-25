@@ -47,7 +47,7 @@ function setTimeMent() {
     const hoursForClock = hours % 12;
 
     if ("0" <= hours && hours <= "5") {
-        timeMent.innerHTML = `벌써 ${hoursForClock}시네요🤭 잠은 주무셨나요? `;
+        timeMent.innerHTML = `벌써 ${hoursForClock}시네요🤭 잠은 안주무시나요? `;
         videoEl.innerHTML = `<video src="videos/${videos[0]}.mp4" autoplay muted loop></video>`;
     } else if ("6" <= hours && hours <= "10") {
         timeMent.innerHTML = `좋은 아침입니다 오늘도 즐거운 하루😄`;
