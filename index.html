@@ -6,16 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <script defer src="js/main.js"></script>
     <script defer src="js/second.js"></script>
     <script defer src="js/auto-text.js"></script>
     <script defer src="js/third.js"></script>
+    <script defer src="js/load.js"></script>
 </head>
 
-<body>
+<body class="before-load">
+    <div class="loading">
+        <svg class="loading-circle">
+            <circle cx="50%" cy="50%" r="25"></circle>
+        </svg>
+    </div>
     <section class="first section">
         <div class="glass"></div>
         <div class="video">
@@ -28,7 +34,6 @@
                 <div class="needle second"></div>
                 <div class="center-point"></div>
             </div>
-
             <div class="time"></div>
             <div class="date"></div>
         </div>
